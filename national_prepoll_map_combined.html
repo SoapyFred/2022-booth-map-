@@ -176,7 +176,36 @@
 </tr>
 </tbody>
 </table>
-</div></body>
+</div>
+<div style="
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 9999;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    max-height: 200px;
+    max-width: 280px;
+    overflow: auto;
+    font-family: sans-serif;
+    font-size: 12px;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+">
+<h4 style="margin-top: 0;">Postal Votes by State</h4>
+<table border="1" class="dataframe postal-table">
+<thead>
+<tr style="text-align: right;">
+<th>State</th>
+<th>Postal Votes Returned</th>
+</tr>
+</thead>
+<tbody>
+<tr><td>ACT</td><td style="text-align:right;">8,025</td></tr><tr><td>NSW</td><td style="text-align:right;">208,227</td></tr><tr><td>NT</td><td style="text-align:right;">1,704</td></tr><tr><td>QLD</td><td style="text-align:right;">137,320</td></tr><tr><td>SA</td><td style="text-align:right;">43,847</td></tr><tr><td>TAS</td><td style="text-align:right;">20,425</td></tr><tr><td>VIC</td><td style="text-align:right;">279,362</td></tr><tr><td>WA</td><td style="text-align:right;">77,286</td></tr>
+</tbody>
+</table>
+</div>
+</body>
 <script>
     
     
@@ -10758,6 +10787,6 @@
         .attr("class", "caption")
         .attr("y", 21)
         .attr("fill", "black")
-        .text("Darker = Higher Relative Vote Total Within State)");
+        .text("Votes Cast at Physical Locations (Daily Totals Visible for All)");
 </script>
 </html>
